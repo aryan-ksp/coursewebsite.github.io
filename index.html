@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Aggregated Free Skill Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1> 📖 Luein Analytics Courses</h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">All Courses</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Course Overview Section -->
+        <section class="course-overview">
+            <button class="enroll-btn">Enroll</button>
+            <h1>Course Title: Learn Web Development</h1>
+            <p>Skill Level: <span>Beginner</span></p>
+            <p>Duration: <span>5 Hours</span></p>
+            <p>Total Videos: <span>10</span></p>
+            <p>Average Rating: <span>4.5/5</span></p>
+        </section>
+
+        <!-- Video List Section -->
+        <section class="video-list">
+            <h2>Course Videos</h2>
+            <ul>
+                <li>
+                    <h3>Video 1: HTML Basics</h3>
+                    <p>Duration: 30 mins | Views: 1000</p>
+                    <input type="checkbox" id="video1" onclick="toggleCompletion(this)"> Mark as Completed
+                </li>
+                <li>
+                    <h3>Video 2: CSS Fundamentals</h3>
+                    <p>Duration: 40 mins | Views: 2000</p>
+                    <input type="checkbox" id="video2" onclick="toggleCompletion(this)"> Mark as Completed
+                </li>
+                <li>
+                    <h3>Video 3: All about JavaScript </h3>
+                    <p>Duration: 40 mins | Views: 2000</p>
+                    <input type="checkbox" id="video3" onclick="toggleCompletion(this)"> Mark as Completed
+                </li>
+                <li>
+                    <h3>Video 4: ReactJS for Beginners</h3>
+                    <p>Duration: 40 mins | Views: 2000</p>
+                    <input type="checkbox" id="video4" onclick="toggleCompletion(this)"> Mark as Completed
+                </li>
+            </ul>
+        </section>
+
+        <!-- Video Player Section -->
+        <section class="video-player">
+            <h2>Now Playing: Video 1 - HTML Basics</h2>
+            <div class="player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="aisummary" >
+                <ul> <strong> AI Summary:</strong><li> Basic Tags in HTML | HTML Tags and Attributes Explained </li>
+                   <li> This video explains the HTML tag, which is the root of the HTML document and contains all other tags. 
+                    HTML tutorial for complete beginners: The document structure</li>
+                  <li>  This video explains the structure of an HTML document, including the doctype, the HTML element, and the head and body elements.</li> 
+                  <li>  Introduction to HTML | An HTML5 Tutorial for Beginners </li>
+                  <li> This video explains how to create HTML elements, including the naming convention and how to use tags. </li>
+                  
+                  <li> This video explains the basic structure of HTML, including the HTML tags, the head tag, and the body tag. </li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <!-- Notes and Tools Section -->
+        <section class="notes-tools">
+            <h2>Custom Notes</h2>
+            <textarea placeholder="Write your notes here..."></textarea>
+            <button onclick="saveNotes()">Save Notes</button>
+            <br/>
+            <div class="ai-questions">
+                <h2>AI-Generated Questions</h2>
+                <ul>
+                    <li>What is the purpose of the head tag in HTML?</li>
+                    <br/>
+                    <li>Explain the difference between an element and an attribute in HTML?</li>
+                    <br/>
+                    <li>What is the use of Break tag in HTML?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Progress Tracker Section -->
+        <section class="progress-tracker">
+            <h2>Course Progress</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%"></div>
+            </div>
+            <p>Progress: 40%</p>
+        </section>
+
+        <!-- Job-Seeker Tips Section -->
+        <section class="job-seeker-tips">
+            <h2>Job-Seeker Tips</h2>
+            <p>Job Title: Frontend Developer</p>
+            <ul>
+                <li>Skill Set: HTML, CSS, JavaScript, React</li>
+                <br/>
+                <li>Sample Job Description: Build responsive user interfaces, collaborate with backend developers...</li>
+            </ul>
+        </section>
+
+        <!-- Rate the Course Section -->
+        <section class="rate-course">
+            <h2>Rate This Course</h2>
+            <input type="number" id="rating" min="1" max="5" placeholder="Rate out of 5">
+            <button onclick="submitRating()">Submit Rating</button>
+        </section>
+
+        <!-- Certificate of Completion Section -->
+        <section class="certificate">
+            <button onclick="downloadCertificate()">Download Certificate</button>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

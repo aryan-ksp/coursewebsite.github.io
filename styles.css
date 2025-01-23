@@ -1,0 +1,590 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#e6e6ff; /* Set background color to white */
+    color: #0066cc; /* Set text color to blue */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    padding: 30px;
+    /* background-color: white; */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    transition: all 0.3s ease;
+}
+
+/* Hover animation for container */
+/* .container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+} */
+
+/* Title Styles */
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: black; /* Blue text */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.enroll-btn {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Course Overview Section */
+.course-overview {
+    background-color: #f0f8ff; /* Light blue background */
+    color: black; /* Bwhitelue text */
+    padding: 30px;
+    background-image: url('back_slide.png');
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.course-overview:hover {
+    background-color: #e0f7ff;
+}
+
+.course-overview p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-overview .enroll-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.course-overview .enroll-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Video List Section */
+.video-list ul {
+    list-style-type: none;
+    margin-top: 20px;
+
+}
+
+.video-list li {
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.video-list li:hover {
+    background-color: #e0e0e0;
+    transform: translateX(5px);
+}
+
+.video-list li h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:black; /* Blue text */
+}
+
+.video-list li p {
+    font-size: 14px;
+    color: #555;
+}
+
+.video-list input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+/* Video Player Section */
+.video-player iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Notes Section */
+.notes-tools textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.notes-tools textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.notes-tools button {
+    padding: 12px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notes-tools button:hover {
+    background-color: #005bb5;
+}
+
+/* Progress Tracker */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.progress {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 5px;
+}
+
+.progress p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Job-Seeker Tips Section */
+.job-seeker-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-seeker-tips li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+/* Rate the Course */
+.rate-course h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.rate-course input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.rate-course button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rate-course button:hover {
+    background-color: #e0a800;
+}
+.ai-questions {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    color:black;
+}
+
+
+
+.ai-questions h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: black; /* Blue text */
+}
+
+.ai-questions ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ai-questions li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ai-questions li:hover {
+    background-color: #e0e0e0;
+    transform: translateX(5px);
+}
+
+.ai-questions li break {
+    display: block;
+    margin-bottom: 8px; /* Ensures spacing between questions */
+}
+
+
+/* Progress Tracker Section */
+.progress-tracker {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+
+
+.progress-tracker h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:black; /* Blue text */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.progress {
+    height: 100%;
+    background-color: #28a745; /* Green progress bar */
+    border-radius: 5px;
+}
+
+.progress-tracker p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Certificate Section */
+.certificate {
+    text-align: center;
+}
+
+.certificate button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.certificate button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6ff; /* Set background color to white */
+    color: #0066cc; /* Set text color to blue */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4185ca; /* Blue background for header */
+    color: white;
+    padding: 10px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.header .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-links li {
+    display: inline-block;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+.aisummary ul li {
+    padding-left: 20px; /* Adjust as needed */
+    list-style-position: inside; /* Optional: Changes bullet position */
+}
+.aisummary strong {
+    color: black;
+    
+}
+
+.header .nav-links a:hover {
+    color: #ffcc00; /* Hover color for links */
+}
+
+.header .login-btn button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.header .login-btn button:hover {
+    background-color: #e0a800;
+}
+
+/* Course Overview Section */
+.course-overview {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Video List Section */
+.video-list {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Video Player Section */
+.video-player {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Notes Tools Section */
+.notes-tools {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Progress Tracker Section */
+.progress-tracker {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Job Seeker Tips Section */
+.job-seeker-tips {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Rate the Course Section */
+.rate-course {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Certificate Section */
+.certificate {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    animation: pulse 0.8s infinite;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.course-overview, .video-list li, .notes-tools, .progress-tracker {
+    animation: fadeInScale 1s ease-out forwards;
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.certificate button {
+    animation: bounceIn 1s ease-out;
+}
+@keyframes zoomInEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.video-list li:hover img {
+    animation: zoomInEffect 0.5s ease-out;
+}
+@keyframes revealProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.progress-bar .progress {
+    animation: revealProgress 2s ease-in-out forwards;
+}
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 204, 0, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+}
+
+button:hover {
+    animation: glowEffect 1.5s infinite;
+}
+
+
